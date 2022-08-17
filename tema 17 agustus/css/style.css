@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #f4f4f4;
+  position: fixed;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  top: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*logo*/
+nav .logo {
+  padding-left: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+nav .logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+nav .logo img {
+  width: 60px;
+}
+/*Menu*/
+nav .menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+nav .menu ul {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style: none;
+}
+nav .menu ul li {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+/*MENU STYLE*/
+.hamburger-menu {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  display: none;
+  margin-right: 5rem;
+}
+#toggler {
+  display: none;
+}
+.hamburger-menu label {
+  display: flex;
+  flex-direction: column;
+}
+.hamburger-menu label span {
+  width: 3.5rem;
+  border-radius: 20px;
+  height: 0.5rem;
+  margin-bottom: 10px;
+  background-color: rgb(214, 57, 57);
+}
+/*Setting Template*/
+
+/*Home Template*/
+#home {
+  padding-top: 10rem;
+  padding-top: 5rem;
+  height: 75vh;
+}
+#home .container {
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+}
+#home .container .row {
+  display: flex;
+  height: 40rem;
+}
+#home .container .row .left {
+  width: 50%;
+}
+#home .container .row .left .text {
+  margin: auto;
+  margin-top: 14rem;
+  width: 38rem;
+}
+#home .container .row .left .text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+#home .container .row .left .text p {
+  font-size: 17px;
+}
+#home .container .row .right {
+  width: 50%;
+}
+#home .container .row .right .img-container {
+  width: 30rem;
+  margin: auto;
+  margin-top: 6rem;
+}
+#home .container .row .right img {
+  margin: auto;
+  width: 30rem;
+}
+/*sejara*/
+#sejarah .container {
+  padding-top: 10rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  height: 100%;
+}
+#sejarah .container .row {
+  margin-top: 2rem;
+}
+#sejarah h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#sejarah p {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer {
+  padding: 20px 5rem 20px 5rem;
+}
+footer p {
+  text-align: center;
+}
+@media only screen and (max-width: 900px) {
+  /*menu*/
+  nav .menu {
+    position: fixed;
+    background: #c2bebe;
+    width: 100%;
+    margin-top: 98px;
+  }
+  nav .menu ul {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 4rem;
+  }
+
+  /*menu-hub*/
+  .hamburger-menu {
+    display: flex;
+  }
+  nav #toggler:not(:checked) ~ .menu {
+    height: 0;
+    transform: scale(0);
+  }
+  nav #toggler:checked ~ .menu {
+    height: calc(70vh - 80px);
+    transition: 1s ease;
+  }
+  nav #toggler:checked ~ .menu ul {
+    transition: 1s ease;
+  }
+  nav #toggler:not(:checked) ~ .menu ul {
+    transform: scale(0);
+  }
+}
